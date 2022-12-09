@@ -1,0 +1,25 @@
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+    function calcularImc(peso, altura){
+        return (peso / (altura * altura));
+    }
+    
+    nombre = prompt("¿Como te llamas?");
+    pesoInformado = prompt(nombre + ", ¿Cual es tu peso? ");
+    alturaInformado = prompt(nombre + ", ¿Cual es tu altura?");
+    
+    imcCalculado = calcularImc(pesoInformado,alturaInformado)
+    
+    imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+    
+</script>
