@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<H1>Adivina el numero</H1>
+
+<script>
+    function saltarlalinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase)
+        saltarlalinea();
+
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("¿Ingresa un numero del 0-10?"));
+
+    if(numeroPensado == numeroLanzado ){
+        imprimir ("¡Felicidades! haz acertado en el numero")
+    }
+    else{
+        imprimir("has errado, el numero era " + numeroPensado)
+    }
+
+</script>

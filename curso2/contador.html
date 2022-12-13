@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<H1>años de los mundiales</H1>
+
+<script>
+    function saltarlalinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase)
+        saltarlalinea();
+
+    }
+
+    var miembros = parseInt(prompt("¿Ingresa el numero de familiares?"));
+    var contador = 1;
+    var totalEdades =0;
+
+    while (contador <= miembros ){
+        edad = parseInt(prompt("ingrese la edad de su familiar"));
+        totalEdades = totalEdades + edad;
+        contador++;
+    }
+
+    mediaedad = totalEdades / miembros;
+
+    imprimir("La media de edad en la familia es "+ mediaedad);
+    imprimir("FIN")
+    
+
+</script>
