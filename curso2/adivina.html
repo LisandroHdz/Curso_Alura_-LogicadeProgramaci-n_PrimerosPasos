@@ -16,13 +16,26 @@
     }
 
     var numeroPensado = Math.round(Math.random()*10);
-    var numeroLanzado = parseInt(prompt("¿Ingresa un numero del 0-10?"));
+    var intentos = 3;
+    var contador = 1;
+    
+    while (contador <= intentos){
 
-    if(numeroPensado == numeroLanzado ){
-        imprimir ("¡Felicidades! haz acertado en el numero")
-    }
-    else{
-        imprimir("has errado, el numero era " + numeroPensado)
-    }
+        var numeroLanzado = parseInt(prompt("¿Ingresa un numero del 0-10?"));
+
+        if(numeroPensado == numeroLanzado ){
+            alert ("¡Felicidades! haz acertado en el numero");
+            imprimir ("muchas felicidades");
+            break;
+        }
+        else{
+            alert("has errado, ¡vuelve a intentarlo!");
+        }
+        contador++;
+
+}
+
+imprimir("Mucha suerte para la proxima el numero pensado era: " + numeroPensado);
+
 
 </script>

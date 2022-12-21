@@ -1,6 +1,7 @@
+
 <meta charset="UTF-8">
 
-<H1>10 primeros nombres</H1>
+<H1>Estos son los nombres de los alumnos: </H1>
 
 <script>
     function saltarlalinea(){
@@ -15,18 +16,15 @@
 
     }
 
-    var miembros = (prompt("¿Ingresa el numero de alumnos?"));
+    var miembros = parseInt(prompt("¿cuantos alumnos son?"));
     var contador = 1;
-    var totalEdades =0;
-
     while (contador <= miembros ){
-        imprimir = miembros;
+        nombres = (prompt("ingresa tu nombre"));
+        practica = (nombres);
+        imprimir(practica);
         contador++;
     }
 
-    mediaedad = totalEdades / miembros;
-
-    imprimir("La media de edad en la familia es "+ mediaedad);
     imprimir("FIN")
     
 

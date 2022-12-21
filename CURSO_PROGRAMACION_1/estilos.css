@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.fragmento{
+    background-color: #ccc;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+.lista{
+    display: inline-block;
+    font-size: 40px;
+    font-style: italic;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.peluquero{
+    width: 50%;
+
+}
