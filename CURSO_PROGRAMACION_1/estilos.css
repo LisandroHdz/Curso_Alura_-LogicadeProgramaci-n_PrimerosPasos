@@ -1,13 +1,44 @@
-h1{
-    text-align: center;
+header {
+    background: #BBBBBB;
+    padding: 5px 0;
 }
 
-h2{
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.body h2{
     text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 20px;    
+
 }
-img{
-    width: 100%;
-}
+
 .fragmento{
     background-color: #ccc;
     padding: 30px;
@@ -20,14 +51,19 @@ em strong{
 }
 .lista{
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     vertical-align: top;
     width: 20%;
-    margin-right: 15%;
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .peluquero{
-    width: 50%;
+    width: 60%;
 
+}
+
+.imagen1{
+    width: 100%;
 }
